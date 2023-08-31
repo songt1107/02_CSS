@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+#home-logo {
+    width: 100px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > section:first-child {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    align-items: center;
+}
+
+form[name="search-form"] fieldset {
+    display: flex;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+form[name="search-form"] fieldset input {
+    width: 80%;
+    height: 80%;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    margin: 0 20px;
+}
+
+form[name="search-form"] fieldset button {
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: gray;
+    background-color: rgb(221, 221, 221, 0.5);
+    border-radius: 0 45px 45px 0;
+    padding: 0;
+    margin-left: 80px;
+}
+
+#search-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
+}
+
+.search-section{
+    width: 800px;
+    display: flex;
+    border-style: none;
+}
+
+.button-wrapper {
+    flex-basis: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+
+.button-wrapper > button {
+    background-color: rgb(221, 221, 221, 0.5);
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+}
+
+.button-wrapper > button:hover {
+    background-color: #ddd;
+}
+
+main {
+    padding: 20px 100px;
+
+    display: flex;
+    height: 100vh;
+}
+
+main section:first-child{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:last-child {
+    flex-basis: 30%;
+}
+
+.iframe-box {
+    display: flex;
+    width: 100%;
+    flex-basis: 70%;
+}
+
+.content-box {
+    flex-basis: 30%;
+}
+
+.content-box h1 {
+    font-size: 20px;
+    line-height: 48px;
+}
+
+.img-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    /* 흘러넘친부분 숨기기*/
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper img {
+    height: 100%;
+}
+
+#subscriber {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+#subscribe-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.like-unlike-btn {
+    display: flex;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(221, 221, 221, 0.5);
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.like-unlike-btn > button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.like-unlike-btn > span {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.share-btn {
+    display: flex;
+    font-size: 18px;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(221, 221, 221, 0.5);
+}
+
+.share-btn > button,
+.save-btn > button {
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.save-btn {
+    display: flex;
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(221, 221, 221, 0.5);
+}
+
+/* 반응형 모바일 기준 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
+@media all and (max-width:767px) {
+
+    body {
+        background-color: red;
+    }
+
+
+}
+
+/* 태블릿 */
+@media all and (min-width:768px) and (max-width:1023px) { /*스타일입력*/}
+
+/* pc 해상도 1024px */
+@media all and (min-width:1024px) {}
+
+
+
+
+
+
